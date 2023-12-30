@@ -1,77 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/custom.css">
 </head>
+
 <body>
-    <nav
-        class="navbar navbar-expand-md navbar-dark bg-dark"
-    >
-        <a class="navbar-brand" href="index.html">Yoru's blog</a>
-        <button
-            class="navbar-toggler d-lg-none"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbar-blog"
-            aria-controls="navbar-blog"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-        <span class="navbar-toggler-icon"></span>
-    </button>
-        <div class="collapse navbar-collapse" id="navbar-blog">
-            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html" aria-current="page"
-                        >首頁 <span class="visually-hidden">(current)</span></a
-                    >
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <!-- <li class="nav-item dropdown">
-                    <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        id="dropdownId"
-                        data-bs-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Dropdown</a
-                    >
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">Action 1</a>
-                        <a class="dropdown-item" href="#">Action 2</a>
-                    </div>
-                </li> -->
-            </ul>
-            <form class="d-flex my-2 my-lg-0">
-                <input
-                    class="form-control me-sm-2"
-                    type="text"
-                    placeholder="Search"
-                />
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
-                    Search
-                </button>
-            </form>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top" id="navbar" role="navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-3" href="index.html">Yoru的網站</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-blog"
+                aria-controls="navbar-blog" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-blog">
+                <ul class="navbar-nav me-auto">
+                    <!-- <li class="nav-item ms-3 mt-2 mt-md-0">
+                        <a class="nav-link active" href="index.html" aria-current="page">首頁 <span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="#">Link</a>
+                    </li> -->
+                </ul>
+            </div>
         </div>
     </nav>
-    
-<div class="container mt-4">
-    <div class="row g-4">
-        <div class="col-12 col-md-8">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis nostrum rem omnis quo temporibus totam exercitationem, accusamus sapiente! Officiis, ratione expedita ullam ea earum modi. Sequi veniam porro perferendis aperiam!
-        </div>
-        <div class="col-12 col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, veritatis dolore autem explicabo commodi facilis distinctio sed tempore tempora odio doloremque repudiandae accusantium. Animi incidunt eos repellat nostrum reiciendis repudiandae.</p>
+
+    <div class="container-fluid mt-4 px-5" data-bs-spy="scroll" data-bs-target="navbar">
+        <div class="row g-3">
+            <div class="col-6 col-md-1">
+                <nav class="nav nav-underline flex-column">
+                    <a class="nav-link active" aria-current="page" href="#carousel">輪播</a>
+                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Link</a>
+                </nav>
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="py-3 py-md-5">
+                    <div id="carousel" class="carousel slide mb-3" style="width: 100%; height: 300px"
+                        data-bs-ride="carousel" data-bs-theme="dark">
+                        <div class="carousel-inner h-100">
+                            <!-- <div class="carousel-item h-100 active">
+                                <img src="" class="d-block w-100 h-100 object-fit-contain" alt="...">
+                            </div> -->
+                        </div>
+                        <div class="carousel-indicators">
+                            <!-- <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button> -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">上一張</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">下一張</span>
+                        </button>
+                    </div>
+
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-Cheems-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-Cheems" type="button" role="tab" aria-controls="nav-Cheems"
+                                aria-selected="true">
+                                <img src="image/cheems.png" style="height: 50px;" alt="">
+                                Cheems</button>
+                            <button class="nav-link" id="nav-Josh-tab" data-bs-toggle="tab" data-bs-target="#nav-Josh"
+                                type="button" role="tab" aria-controls="nav-Josh" aria-selected="false">
+                                <img src="image/josh.jpg" style="height: 50px;" alt="">
+                                Josh Hutcherson</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-Cheems" role="tabpanel"
+                            aria-labelledby="nav-Cheems-tab" tabindex="0">
+                            <p class="lh-lg">
+                                Cheems是一隻自帶嘲諷buff的柴犬，因表情生動而在眾多迷因出現。Cheems的流行最早可以追溯至2017年9月4號，那天家人發布了一張照片，它從此流行於網絡，為人所熟知的還有它喜歡的芝士漢堡（Cheemshamburg）。它那張可愛微妙的臉成為了各種各樣的梗。
+                            </p>
+                            <p class="lh-lg">
+                                儘管Cheems給大家帶來了沙雕與歡樂，但很少有人了解它的真實生活。他是「好孩子」，真名「波子」(Balltze)，外號海綿阿布，現居香港。
+                            </p>
+                            <p class="lh-lg">
+                                2023年8月19日，它的主人對外宣布Balltze已於昨天（8月18日）與世長辭。
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="nav-Josh" role="tabpanel" aria-labelledby="nav-Josh-tab"
+                            tabindex="0">
+                            <p class="lh-lg">
+                                口哨聲來襲，小心被釣魚！過去兩週內，一段名為「喬許哈契森『口哨』剪輯」（Josh Hutcherson 'Whistle'
+                                edit）的粉絲製作影片在社群媒體上瘋傳，其散播的模式堪稱瑞克搖 2.0 。
+                            </p>
+                            <p class="lh-lg">
+                                該影片最初於 2014 年發佈在 YouTube 上，由名為 MetroGirlzStation 的頻道上傳，是結合喬許哈契森的照片、知名饒舌歌手佛羅里達（Flo
+                                Rida）歌曲〈Whistle〉的翻唱歌手 Joel Merry 演唱版本。
+                            </p>
+                            <p class="lh-lg">
+                                隔了近 10 年，受惠於《飢餓遊戲》新電影《飢餓遊戲：鳴鳥與游蛇之歌》於 11
+                                月開播，該段剪輯再度浮上檯面。儘管喬許哈契森沒有出現在最新的電影裡，但新作上映激起人們對原版《飢餓遊戲》及其演員的興趣。更重要的是，喬許哈契森先前有出演在歐美火紅的《佛萊迪餐館之五夜驚魂》電影，進一步增強網路鄉民對他的興趣。
+                            </p>
+                            <p class="lh-lg">
+                                於是網友開始挖掘舊時代的產物，因此「喬許哈契森『口哨』剪輯」迎來新春。不過大夥不是單純地鑑賞，而是採取類似瑞克搖歌曲〈Never Gonna Give You
+                                Up〉的模式，先安排一個看似很正經的介紹影片，隨後出奇不意地讓喬許哈契森的臉龐出現，釣魚釣得看影片的觀眾猝不及防。
+                            </p>
+                            <p class="lh-lg">
+                                除了釣魚之外，還衍生出其他同人創作，或是搭配動漫、遊戲的玩梗方式，《咒術迴戰》、《進擊的巨人》等作品就慘遭「口哨」感染。《鬥陣特攻》也有人在做新角的 3D
+                                模型時，致敬了喬許哈契森一番。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <!-- <div class="py-0 py-md-5">
+                    <img class="object-fit-contain" src="image/huh.gif" style="width: 100%; height: 300px;" alt="">
+                </div> -->
+                <iframe width="110" height="200" src="https://www.myinstants.com/instant/bongo-cat-lets-go-26369/embed/"
+                    frameborder="0" scrolling="no"></iframe>
+            </div>
         </div>
     </div>
-</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            let img = ["cheems.png", "josh.jpg", "banana cat.jpg", "gigachad.jpg", "smurf cat.png", "藍色妖姬.jpg"];
+            // let img_cap = ["Cheems", "Josh Hutcherson", "banana cat", "Gigachad", "smurf cat", "藍色妖姬"];
+            // <div class="carousel-caption d-none d-md-block">
+            //     <p>${img_cap[index]}</p>
+            // </div>
+            // 動態新增圖片
+            $.each(img, function (index, element) {
+                $(".carousel-inner").append(
+                    `<div class="carousel-item h-100 ${index == 0 ? "active" : ""}">
+                        <img src="image/${element}" class="d-block w-100 h-100 object-fit-contain" alt="${element}">
+                    </div>`);
+                $(".carousel-indicators").append(`
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="${index}" class="${index == 0 ? "active" : ""}"
+                    aria-current="true" aria-label="Slide ${index + 1}"></button>
+                `);
+            });
+        })
+
+    </script>
 </body>
+
 </html>

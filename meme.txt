@@ -16,9 +16,8 @@ oiiaoiia
 groove battle
 雞你太美
 原神啟動
-// mouseenter動畫
+// click動畫
 pop cat
-crying cat
 // 可以延伸?
 let me do it for you
 

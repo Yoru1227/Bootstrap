@@ -1,4 +1,10 @@
 $primary: rgb(33, 33, 58);
+$secondary: rgb(220, 220, 220);
+$accordion-button-bg: rgb(33, 33, 58);
+$accordion-button-color: rgb(255, 255, 255);
+$accordion-button-active-bg: rgb(255, 255, 255);
+$accordion-button-focus-box-shadow: 0;
+$accordion-icon-color: rgb(255, 255, 255);
 
 @import "scss/bootstrap.scss";
 @import "scss/utilities.scss";

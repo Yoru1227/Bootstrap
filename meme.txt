@@ -18,7 +18,5 @@ groove battle
 原神啟動
 // click動畫
 pop cat
-// 可以延伸?
-let me do it for you
 
 button list
